@@ -3,4 +3,5 @@ defmodule RkknCloud.Router do
 
   get "/", RkknCloud.PageController, :index, as: :pages
   resources "/api_key", RkkCloud.ApiKeysController
+  resources "/dataset", RkkCloud.DatasetController
 end
