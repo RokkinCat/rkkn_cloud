@@ -13,7 +13,7 @@ defmodule RkknCloud.Mixfile do
   def application do
     [
       mod: { RkknCloud, [] },
-      applications: [:phoenix, :cowboy, :logger, :postgrex, :ecto]
+      applications: [:phoenix, :cowboy, :logger, :postgrex, :ecto, :crypto]
     ]
   end
 
@@ -27,7 +27,8 @@ defmodule RkknCloud.Mixfile do
       {:phoenix, "0.4.1"},
       {:cowboy, "~> 1.0.0"},
       {:ecto, "~> 0.2.4"},
-      {:postgrex, ">= 0.0.0"}
+      {:postgrex, ">= 0.0.0"},
+      {:timex, "~> 0.12.4"}
     ]
   end
 end

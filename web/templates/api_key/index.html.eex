@@ -1,0 +1,9 @@
+<a href="<%= Router.api_key_path(:new) %>" class="btn btn-default">Create New</a>
+<div class="panel panel-default">
+  <div class="panel-heading">API Key: <a href="<%= Router.api_key_path(:show, @api_key.key) %>"><%= Router.api_key_path(:show, @api_key.key) %></a></div>
+  <ul class="list-group">
+    <li class="list-group-item"><b>Email:</b> <%= @api_key.email %> </li>
+    <li class="list-group-item"><b>Key:</b> <%= @api_key.key %> </li>
+    <li class="list-group-item"><b>Created:</b> <%= datetime_string(@api_key.created_at) %> </li>
+  </ul>
+</div>
